@@ -1,0 +1,61 @@
+.lookup-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lookup-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.lookup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.lookup-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.lookup-form input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.lookup-form .help-text {
+    display: block;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.lookup-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.lookup-form button:hover {
+    background-color: #0052a3;
+}
+
+.lookup-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

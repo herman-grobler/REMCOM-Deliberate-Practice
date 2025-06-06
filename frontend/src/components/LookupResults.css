@@ -1,0 +1,90 @@
+.lookup-results {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lookup-results h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.result-type {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.notices-section,
+.warrants-section {
+    margin-bottom: 2rem;
+}
+
+.notices-section h3,
+.warrants-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.notices-list,
+.warrants-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.notice-card,
+.warrant-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.notice-card h4,
+.warrant-card h4 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+.notice-card p,
+.warrant-card p {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.notice-details,
+.warrant-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.status.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.expired {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+}

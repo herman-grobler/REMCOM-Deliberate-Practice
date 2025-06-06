@@ -1,0 +1,93 @@
+.enforcement-actions {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.enforce-button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.enforce-button:hover {
+    background-color: #c82333;
+}
+
+.enforcement-confirmation {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enforcement-confirmation h3 {
+    margin: 0 0 1rem 0;
+    color: #343a40;
+}
+
+.enforcement-confirmation p {
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.enforcement-notes {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.confirmation-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.confirm-button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}

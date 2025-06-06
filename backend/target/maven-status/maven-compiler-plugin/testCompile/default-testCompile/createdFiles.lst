@@ -1,3 +1,5 @@
 com\example\demo\controller\ApiControllerTest.class
+com\example\demo\controller\EnforcementControllerTest.class
+com\example\demo\controller\LookupControllerTest.class
 com\example\demo\controller\AuthControllerTest.class
 com\example\demo\service\AuthServiceTest.class
