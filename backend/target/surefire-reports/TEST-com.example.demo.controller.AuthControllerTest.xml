@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo.controller.ApiControllerTest" time="7.209" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.demo.controller.AuthControllerTest" time="0.54" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -62,82 +62,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldReturnHelloMessage" classname="com.example.demo.controller.ApiControllerTest" time="1.836">
-    <failure message="Status expected:&lt;200&gt; but was:&lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<403>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.example.demo.controller.ApiControllerTest.shouldReturnHelloMessage(ApiControllerTest.java:36)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-    <system-out><![CDATA[08:52:27.691 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.controller.ApiControllerTest]: ApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-08:52:27.983 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.ApiControllerTest
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.3)
-
-2025-06-06T08:52:28.740+02:00  INFO 30176 --- [           main] c.e.demo.controller.ApiControllerTest    : Starting ApiControllerTest using Java 21.0.5 with PID 30176 (started by hgr in C:\Dev\Deliberate-Practice\REMCOM-Deliberate-Practice\backend)
-2025-06-06T08:52:28.742+02:00  INFO 30176 --- [           main] c.e.demo.controller.ApiControllerTest    : No active profile set, falling back to 1 default profile: "default"
-2025-06-06T08:52:31.131+02:00  WARN 30176 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 8a06f071-6f2d-4e8d-b581-ea421e6be6f4
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-06-06T08:52:32.081+02:00  INFO 30176 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51bddd98, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21c747a, org.springframework.security.web.context.SecurityContextHolderFilter@76cf841, org.springframework.security.web.header.HeaderWriterFilter@17b016ac, org.springframework.web.filter.CorsFilter@77d4ac52, org.springframework.security.web.authentication.logout.LogoutFilter@ef718de, com.example.demo.security.JwtAuthFilter@29f38091, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20999517, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ec63f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@161dd92a, org.springframework.security.web.session.SessionManagementFilter@629984eb, org.springframework.security.web.access.ExceptionTranslationFilter@5e5beb8a, org.springframework.security.web.access.intercept.AuthorizationFilter@4faf104]
-2025-06-06T08:52:32.649+02:00  INFO 30176 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-06-06T08:52:32.649+02:00  INFO 30176 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-06-06T08:52:32.651+02:00  INFO 30176 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-06-06T08:52:32.683+02:00  INFO 30176 --- [           main] c.e.demo.controller.ApiControllerTest    : Started ApiControllerTest in 4.37 seconds (process running for 6.496)
-
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/hello
-       Parameters = {}
-          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"56"]
-             Body = {"password":"wrongpassword","email":"admin@example.com"}
-    Session Attrs = {}
-
-Handler:
-             Type = null
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = null
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 403
-    Error message = Access Denied
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="shouldLoginSuccessfully" classname="com.example.demo.controller.AuthControllerTest" time="0.408">
+    <system-out><![CDATA[2025-06-06T08:52:34.583+02:00  INFO 30176 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-06T08:52:34.595+02:00  INFO 30176 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.AuthControllerTest
 ]]></system-out>
-    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\HGR\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
   </testcase>
+  <testcase name="shouldFailWithInvalidCredentials" classname="com.example.demo.controller.AuthControllerTest" time="0.095"/>
 </testsuite>

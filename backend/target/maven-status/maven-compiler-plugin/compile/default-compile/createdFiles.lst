@@ -1,0 +1,9 @@
+com\example\demo\DemoApplication.class
+com\example\demo\config\SecurityConfig.class
+com\example\demo\controller\AuthController.class
+com\example\demo\service\JwtService.class
+com\example\demo\controller\ApiController.class
+com\example\demo\model\User.class
+com\example\demo\service\AuthService.class
+com\example\demo\model\Role.class
+com\example\demo\security\JwtAuthFilter.class
